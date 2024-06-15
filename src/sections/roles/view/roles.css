@@ -1,0 +1,87 @@
+form {
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+input {
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background: #007BFF;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #0056b3;
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  min-width: 400px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+th {
+  background-color: #5597de;
+  color: rgb(21, 19, 19);
+}
+
+td {
+  background-color: #f2f2f2;
+}
+
+tr:hover td {
+  background-color: #e0e0e0;
+}
+
+@keyframes rowFadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+tr {
+  animation-name: rowFadeIn;
+  animation-duration: 0.5s;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
